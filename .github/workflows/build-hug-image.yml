@@ -18,6 +18,9 @@ jobs:
     permissions:
       contents: read
       packages: write
+    # 添加环境变量强制使用 Node.js 24
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
     steps:
       - name: Checkout repository
